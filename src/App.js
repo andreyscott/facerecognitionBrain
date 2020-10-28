@@ -19,6 +19,7 @@ const particlesOption = {
   interactivity: {
     events: {
     onhover: { 
+      speed: 200,
       enable: true,
       mode: "repulse"
     }
