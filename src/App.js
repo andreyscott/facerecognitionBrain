@@ -19,9 +19,9 @@ const particlesOption = {
   interactivity: {
     events: {
     onhover: { 
-      speed: 200,
+      speed: 400,
+      mode: "repulse",
       enable: true,
-      mode: "repulse"
     }
   }
     },
@@ -62,6 +62,12 @@ class App extends Component {
       entries: data.entries,
       joined: data.joined
     }})
+  }
+
+  componentDidMount() {
+    fetch('http://localhost:3000')
+    .then(response => response.json())
+    .then(console.log)
   }
 
   calculateFaceLocation = (data) => {
