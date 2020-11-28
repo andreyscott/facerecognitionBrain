@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ImageLinkForm.css';
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
@@ -7,7 +7,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
 		<div>
 		<p className="f3"> 
 	{'this Magic Brain will detect faces in your pictures.'}
-	 </p>s
+	 </p>
 	<div className="center">
 	<div className="center form pa4 br3 shadow-5">
 	<input id="dep"  className="f4 pa2 w-70 center" type="text" onChange={onInputChange}  />
